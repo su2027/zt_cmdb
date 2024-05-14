@@ -1,0 +1,40 @@
+{
+  "LogCfg": {
+    "Level": "debug",
+    "FilePath": "./log",
+    "FileName": "zt_cmdb.log"
+  },
+  "MysqlCfg": {
+    "zt_cmdb": {
+      "MysqlConn": "ztgame:ztgame@123@tcp(10.254.23.25:3306)/zt_cmdb?charset=utf8mb4&parseTime=true&loc=Local",
+      "MysqlConnectPoolSize": 40
+    }
+  },
+  "RedisSetting": {
+    "zt_cmdb": {
+      "RedisConn": "10.254.23.25:6379",
+      "RedisPasswd": "",
+      "RedisDb": 1
+    }
+  },
+  "External": {
+    "EtcdConn": "http://192.168.21.58:2379",
+    "KafkaAddr": "xxx:9092",
+    "Key1": "Val1",
+    "zt_cmdb1": "127.0.0.1:2346",
+    "zt_cmdb2": "127.0.0.1:2347",
+    "JaegerAgentAddr": "192.168.16.210:6831",
+    "aliKey": "",
+    "aliSecret": "",
+    "txKey": "",
+    "txSecret": "",
+    "awsKey": "",
+    "awsSecret": "",
+    "hwKey": "",
+    "hwSecret": ""
+  },
+  "ExternalInt64": {
+    "Key2": 66
+  },
+  "Listen": ":8867"
+}
